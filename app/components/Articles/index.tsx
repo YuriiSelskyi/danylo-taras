@@ -209,7 +209,7 @@ export default class MultipleItems extends Component {
                     {items.heading}
                   </h4>
 
-                  <div className="max-h-52 overflow-hidden overflow-y-auto">
+                  <div className="max-h-[225px] overflow-hidden overflow-y-auto">
                     {items.name.map((el, index) => (
                       <h3
                         key={index}
