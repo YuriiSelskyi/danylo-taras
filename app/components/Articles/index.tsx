@@ -1,75 +1,155 @@
 "use client";
+import Image from "next/image";
 import Slider from "react-slick";
 import React, { Component } from "react";
 import Link from "next/link";
-import Image from "next/image";
-
-// CAROUSEL DATA
 
 interface DataType {
-  time: string;
   heading: string;
-  heading2: string;
   date: string;
   imgSrc: string;
-  name: string;
+  name: Array<string>;
   video: string;
 }
 
 const postData: DataType[] = [
   {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
+    heading: "Roofing Contractor",
+    name: [
+      "Attic venting",
+      "Attic venting installation",
+      "Attic venting repairs",
+      "Gutter installation",
+      "Gutter repairs",
+      "Roof damage repair",
+      "Roof inspection",
+      "Roof installation",
+      "Roof repair",
+      "Roof repair for storm & wind damage",
+      "Skylight installation",
+      "Skylight repair",
+    ],
     date: "August 19, 2021",
     imgSrc: "/images/articles/article.png",
-    video: "https://drive.google.com/file/d/1WEtSXFBbXznmfPkPaTwFk0bmMjXEkVwt/view?usp=sharing",
+    video:
+      "https://drive.google.com/file/d/1WEtSXFBbXznmfPkPaTwFk0bmMjXEkVwt/view?usp=sharing",
   },
   {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
+    heading: "Construction Company",
+    name: [
+      "Bathroom remodeling",
+      "Building construction",
+      "Custom home building",
+      "Exterior structural repairs",
+      "Foundation installation",
+      "Home addition construction",
+      "Home building",
+      "Home renovations",
+      "Kitchen remodeling",
+      "New building construction",
+      "Remodeling",
+      "Water & moisture control services",
+      "Commercial Building",
+      "Commercial Roofers",
+      "Commercial Roofing Systems",
+      "Energy Efficiency Upgrade",
+      "Financial Plan",
+      "Flat Roofing",
+      "Free Estimate",
+      "Home Financing",
+      "Home Improvement Services",
+      "Leaf Guards",
+      "Move Walls",
+      "Our Remodeling Services",
+      "Rain Gutters",
+      "Remodel Your Home",
+      "Remodeling Financing",
+      "Remodeling Projects",
+      "Residential & Commercial Roofing",
+      "Residential And Commercial",
+      "Residential Roofing Company",
+      "Residential Roofing Contractors",
+      "Roofing Contractors",
+      "Roofing Project",
+      "Roofing Siding",
+      "Roofing Window",
+      "Siding Contractor",
+      "Slope Roofing",
+      "Turnkey Solutions",
+      "Water Damage",
+    ],
     date: "August 19, 2021",
     imgSrc: "/images/articles/article2.png",
-    video: "https://drive.google.com/file/d/1yT1HdTouvXf3ZeeoxSRa6k-oAzi0bcjg/view?usp=sharing",
+    video:
+      "https://drive.google.com/file/d/1yT1HdTouvXf3ZeeoxSRa6k-oAzi0bcjg/view?usp=sharing",
   },
   {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
+    heading: "Bathroom Remodeler",
+    name: ["Bathtub installation", "Bathtub replacement", "Shower refinishing"],
     date: "August 19, 2021",
     imgSrc: "/images/articles/article3.png",
-    video: "https://drive.google.com/file/d/1gBMei_fgfvgzSu03YowDEtxoR1hRqsaL/view?usp=sharing",
+    video:
+      "https://drive.google.com/file/d/1gBMei_fgfvgzSu03YowDEtxoR1hRqsaL/view?usp=sharing",
   },
   {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
+    heading: "Window Installation Service",
+    name: [
+      "Casement window installation & replacement",
+      "Double pane window installation & replacement",
+      "General door installation",
+      "General window replacement",
+      "Hurricane impact window installation",
+      "Sliding glass door installation & replacement",
+      "Storm door installation & replacement",
+      "Storm window installation & replacement",
+      "Vinyl window installation & replacement",
+      "Window frame repair & replacement",
+      "Window installation",
+    ],
     date: "August 19, 2021",
     imgSrc: "/images/articles/article.png",
-    video: "https://drive.google.com/file/d/1WEtSXFBbXznmfPkPaTwFk0bmMjXEkVwt/view?usp=sharing",
+    video:
+      "https://drive.google.com/file/d/1WEtSXFBbXznmfPkPaTwFk0bmMjXEkVwt/view?usp=sharing",
   },
   {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
+    heading: "Home Builder",
+    name: ["Custom home design", "Home extension services"],
     date: "August 19, 2021",
     imgSrc: "/images/articles/article2.png",
-    video: "https://drive.google.com/file/d/1yT1HdTouvXf3ZeeoxSRa6k-oAzi0bcjg/view?usp=sharing",
+    video:
+      "https://drive.google.com/file/d/1yT1HdTouvXf3ZeeoxSRa6k-oAzi0bcjg/view?usp=sharing",
   },
   {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
+    heading: "Kitchen Remodeler",
+    name: [
+      "Custom kitchen cabinet construction",
+      "Granite countertop installation",
+      "Kitchen cabinet installation",
+      "Kitchen countertop installation",
+      "Kitchen countertop replacement",
+      "Kitchen design",
+    ],
     date: "August 19, 2021",
     imgSrc: "/images/articles/article3.png",
-    video: "https://drive.google.com/file/d/1gBMei_fgfvgzSu03YowDEtxoR1hRqsaL/view?usp=sharing",
+    video:
+      "https://drive.google.com/file/d/1gBMei_fgfvgzSu03YowDEtxoR1hRqsaL/view?usp=sharing",
+  },
+  {
+    heading: "Siding Contractor",
+    name: [
+      "Brick",
+      "Cedar Siding",
+      "Fiber Cement Siding",
+      "Fiberglass Siding",
+      "Natural Wood Siding",
+      "Stone",
+      "Stucco",
+      "Vinyl Siding",
+    ],
+    date: "August 19, 2021",
+    imgSrc: "/images/articles/article3.png",
+    video:
+      "https://drive.google.com/file/d/1gBMei_fgfvgzSu03YowDEtxoR1hRqsaL/view?usp=sharing",
   },
 ];
 
@@ -82,9 +162,9 @@ export default class MultipleItems extends Component {
       infinite: true,
       slidesToShow: 3,
       // centerMode: true,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       arrows: false,
-      autoplay: false,
+      autoplay: true,
       speed: 500,
       cssEase: "linear",
       responsive: [
@@ -116,57 +196,29 @@ export default class MultipleItems extends Component {
             <h3 className="text-[#026163] text-lg font-normal tracking-widest">
               ARTICLES
             </h3>
-            <h3 className="text-4xl sm:text-6xl font-bold">Our latest post.</h3>
+            <h3 className="text-4xl sm:text-6xl font-bold">Our jobs</h3>
           </div>
 
           <Slider {...settings}>
             {postData.map((items, i) => (
               <div key={i}>
-                <div className="bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative">
-                  <div className="flex justify-center h-[262px]">
-                    <video
-                      style={{
-                        display: "block",
-                        objectFit: "cover",
-                        objectPosition: "center",
-                        width: "100%",
-                        borderRadius: "10px",
-                      }}
-                      height="240"
-                      onMouseOver={(event: any) => event.target.play()}
-                      onMouseOut={(event: any) => event.target.pause()}
-                      muted
-                    >
-                      <source src={items.video} type="video/mp4" />
-                      {/* <source src="./2.mp4" type="video/ogg"> */}
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  {/* <video
-                    autoPlay
-                    loop
-                    style={{ width: "500px", height: "500px" }}
-                  >
-                    <source src="./2.mp4" />
-                  </video> */}
-                  {/* <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="inline-block m-auto" /> */}
+                <div className="bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative h-[560px]">
+                  <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="inline-block m-auto" />
 
-                  <Link href="/">
-                    <h3 className="absolute bg-[#026163] text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full article-img">
-                      {items.time} read
-                    </h3>
-                  </Link>
                   <h4 className="text-2xl font-bold pt-6 text-black">
                     {items.heading}
                   </h4>
-                  <h4 className="text-2xl font-bold pt-1 text-black">
-                    {items.heading2}
-                  </h4>
 
-                  <div>
-                    <h3 className="text-base font-normal pt-6 pb-2 opacity-75">
-                      {items.name}
-                    </h3>
+                  <div className="max-h-52 overflow-hidden overflow-y-auto">
+                    {items.name.map((el, index) => (
+                      <h3
+                        key={index}
+                        className="text-base font-normal opacity-75 py-1 px-0.5"
+                      >
+                        {el}
+                      </h3>
+                    ))}
+
                     <h3 className="text-base font-normal pb-1 opacity-75">
                       {items.date}
                     </h3>
