@@ -10,7 +10,7 @@ const Banner = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 my-16">
         {/* COLUMN-1 */}
 
-        <div className="mx-auto sm:mx-0">
+        <div className="mx-auto sm:mx-0 z-0">
           <div className="py-3 text-center lg:text-start">
             <button className="text-[#026163] bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black">
               Construction Corporation
@@ -18,7 +18,7 @@ const Banner = () => {
           </div>
           <div className="py-3 text-center lg:text-start">
             <h1 className="text-6xl lg:text-80xl font-bold text-darkpurple">
-              Dedicated to <br /> build your <br /> ideas to life.
+              Welcome to DST Construction company
             </h1>
           </div>
           <div className="my-7 text-center lg:text-start">

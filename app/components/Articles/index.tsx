@@ -6,7 +6,7 @@ import Link from "next/link";
 
 interface DataType {
   heading: string;
-  date: string;
+  // date: string;
   imgSrc: string;
   name: Array<string>;
   video: string;
@@ -29,7 +29,7 @@ const postData: DataType[] = [
       "Skylight installation",
       "Skylight repair",
     ],
-    date: "August 19, 2021",
+    // date: "August 19, 2021",
     imgSrc: "/images/articles/article.png",
     video:
       "https://drive.google.com/file/d/1WEtSXFBbXznmfPkPaTwFk0bmMjXEkVwt/view?usp=sharing",
@@ -78,7 +78,7 @@ const postData: DataType[] = [
       "Turnkey Solutions",
       "Water Damage",
     ],
-    date: "August 19, 2021",
+    // date: "August 19, 2021",
     imgSrc: "/images/articles/article2.png",
     video:
       "https://drive.google.com/file/d/1yT1HdTouvXf3ZeeoxSRa6k-oAzi0bcjg/view?usp=sharing",
@@ -86,7 +86,7 @@ const postData: DataType[] = [
   {
     heading: "Bathroom Remodeler",
     name: ["Bathtub installation", "Bathtub replacement", "Shower refinishing"],
-    date: "August 19, 2021",
+    // date: "August 19, 2021",
     imgSrc: "/images/articles/article3.png",
     video:
       "https://drive.google.com/file/d/1gBMei_fgfvgzSu03YowDEtxoR1hRqsaL/view?usp=sharing",
@@ -106,7 +106,7 @@ const postData: DataType[] = [
       "Window frame repair & replacement",
       "Window installation",
     ],
-    date: "August 19, 2021",
+    // date: "August 19, 2021",
     imgSrc: "/images/articles/article.png",
     video:
       "https://drive.google.com/file/d/1WEtSXFBbXznmfPkPaTwFk0bmMjXEkVwt/view?usp=sharing",
@@ -114,7 +114,7 @@ const postData: DataType[] = [
   {
     heading: "Home Builder",
     name: ["Custom home design", "Home extension services"],
-    date: "August 19, 2021",
+    // date: "August 19, 2021",
     imgSrc: "/images/articles/article2.png",
     video:
       "https://drive.google.com/file/d/1yT1HdTouvXf3ZeeoxSRa6k-oAzi0bcjg/view?usp=sharing",
@@ -129,7 +129,7 @@ const postData: DataType[] = [
       "Kitchen countertop replacement",
       "Kitchen design",
     ],
-    date: "August 19, 2021",
+    // date: "August 19, 2021",
     imgSrc: "/images/articles/article3.png",
     video:
       "https://drive.google.com/file/d/1gBMei_fgfvgzSu03YowDEtxoR1hRqsaL/view?usp=sharing",
@@ -146,7 +146,7 @@ const postData: DataType[] = [
       "Stucco",
       "Vinyl Siding",
     ],
-    date: "August 19, 2021",
+    // date: "August 19, 2021",
     imgSrc: "/images/articles/article3.png",
     video:
       "https://drive.google.com/file/d/1gBMei_fgfvgzSu03YowDEtxoR1hRqsaL/view?usp=sharing",
@@ -163,7 +163,7 @@ export default class MultipleItems extends Component {
       slidesToShow: 3,
       // centerMode: true,
       slidesToScroll: 1,
-      arrows: false,
+      arrows: true,
       autoplay: true,
       speed: 500,
       cssEase: "linear",
@@ -184,6 +184,7 @@ export default class MultipleItems extends Component {
             slidesToScroll: 1,
             infinite: true,
             dots: false,
+            arrows: false,
           },
         },
       ],
@@ -203,7 +204,13 @@ export default class MultipleItems extends Component {
             {postData.map((items, i) => (
               <div key={i}>
                 <div className="bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative h-[560px]">
-                  <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="inline-block m-auto" />
+                  <Image
+                    src={items.imgSrc}
+                    alt="gaby"
+                    width={389}
+                    height={262}
+                    className="inline-block m-auto"
+                  />
 
                   <h4 className="text-2xl font-bold pt-6 text-black">
                     {items.heading}
@@ -218,10 +225,6 @@ export default class MultipleItems extends Component {
                         {el}
                       </h3>
                     ))}
-
-                    <h3 className="text-base font-normal pb-1 opacity-75">
-                      {items.date}
-                    </h3>
                   </div>
                 </div>
               </div>
