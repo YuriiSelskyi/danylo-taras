@@ -34,15 +34,17 @@ const Dedicated = () => {
               className="absolute comma-pos hidden lg:block"
             />
             <h2 className="text-4xl lg:text-65xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start">
-              Dedicated to help peoples design needs.
+              Dedicated to helping people live comfortably.
             </h2>
             <p className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">
-              Quis ipsum suspendisse ultrices gravida risus commodo viverra
-              maecenas accumsan lacus vel facilisis
+              From minor touch-ups to full-scale transformations, we handle
+              every project with care, precision, and a commitment to quality.
+              Whether it’s painting, flooring, tiling, or complete remodels,
+              we’re here to make your vision a reality.
             </p>
             <p className="text-2xl relative font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">
               {" "}
-              Вуйко Тарас, CEO
+              Taras S., CEO
             </p>
           </div>
         </div>
@@ -60,12 +62,13 @@ const Dedicated = () => {
               Makes repairs and create your dreams
             </h2>
             <p className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">
-              Quis ipsum suspendisse ultrices gravida risus commodo viverra
-              maecenas accumsan lacus vel facilisis
+              We pride ourselves on clear communication, attention to detail,
+              and delivering results that exceed expectations. Let us bring your
+              renovation dreams to life!
             </p>
             <p className="text-2xl relative font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">
               {" "}
-              Данилко, CTO
+              Danylo S., CTO
             </p>
           </div>
           {/* COLUMN-1 */}

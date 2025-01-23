@@ -4,40 +4,41 @@ import Image from "next/image";
 
 const names = [
   {
-    heading: "Startup",
+    heading: "Interior Renovations",
     price: 41,
-    user: "per user, per month",
-    button: "Contact Us",
+    user: "per contractor, per hour",
     profiles: "5 Social Profiles",
-    posts: "5 Scheduled Posts Per Profile",
-    templates: "400+ Templated",
-    view: "Calendar View",
-    support: "24/7 Support",
-    category: "yearly",
+    subtitle:
+      "We bring your vision to life with complete interior overhauls, including:",
+    items: [
+      "Apartment and room renovations.",
+      "Hallway transformations.",
+      "Bathroom remodeling with precision and style.",
+    ],
   },
   {
-    heading: "Business",
+    heading: "Exterior Renovations",
     price: 29,
-    user: "per user, per month",
-    button: "Contact Us",
+    user: "per contractor, per hour",
     profiles: "10 Social Profiles",
-    posts: "5 Scheduled Posts Per Profile",
-    templates: "600+ Templated",
-    view: "Calendar View",
-    support: "24/7 VIP Support",
-    category: "yearly",
+    subtitle:
+      "Enhance the curb appeal and functionality of your property with our professional exterior services",
+    items: ["Painting", "Plastering", "other structural upgrades."],
   },
   {
-    heading: "Agency",
+    heading: "Specialty Services",
     price: 139,
-    user: "per user, per month",
-    button: "Contact Us",
+    user: "per contractor, per hour",
     profiles: "100 Social Profiles",
-    posts: "100 Scheduled Posts Per Profile",
-    templates: "800+ Templated",
-    view: "Calendar View",
-    support: "24/7 VIP Support",
-    category: "yearly",
+    subtitle:
+      "We offer specialized services to ensure your space reflects your unique style, including",
+    items: [
+      "Wall painting and decorative finishes.",
+      "Plastering and surface preparation.",
+      "Installation of drywall.",
+      "Installation Gypsum board systems.",
+      "Venetian plaster applications",
+    ],
   },
 ];
 
@@ -59,25 +60,30 @@ const Manage = () => {
               <p className="text-sm font-medium text-darkgrey mb-6">
                 {items.user}
               </p>
-              <button className="text-sm font-bold text-[#026163] bg-transparent hover:bg-[#026163] hover:text-white border-2 border-[#026163] rounded-full py-4 px-12 mb-6">
-                {items.button}
-              </button>
+              <p className="text-sm font-medium text-darkgrey mb-6">
+                {items.subtitle}
+              </p>
               <hr style={{ color: "darkgrey", width: "50%", margin: "auto" }} />
-              <h3 className="text-sm font-medium text-darkgrey mb-3 mt-6">
-                {items.profiles}
-              </h3>
-              <h3 className="text-sm font-medium text-darkgrey mb-3">
-                {items.posts}
-              </h3>
-              <h3 className="text-sm font-medium text-darkgrey mb-3">
-                {items.templates}
-              </h3>
-              <h3 className="text-sm font-medium text-darkgrey mb-3">
-                {items.view}
-              </h3>
-              <h3 className="text-sm font-medium text-darkgrey mb-3">
-                {items.support}
-              </h3>
+              <div className="max-h-[225px] overflow-hidden overflow-y-auto">
+                {items.items.map((el, index) => (
+                  <h3
+                    key={index}
+                    className="text-base font-normal opacity-75 py-1 px-0.5"
+                  >
+                    {el}
+                  </h3>
+                ))}
+              </div>
+              {/* <div className="mb-3 mt-6 text-left">
+                {items.items.map((el) => (
+                  <h3 className="text-sm font-medium text-darkgrey" key={el}>
+                    {el}
+                  </h3>
+                ))}
+              </div> */}
+              <button className="text-sm font-bold text-[#026163] bg-transparent hover:bg-[#026163] hover:text-white border-2 border-[#026163] rounded-full py-4 px-12 mb-6">
+                Contact Us
+              </button>
             </div>
           ))}
         </div>
