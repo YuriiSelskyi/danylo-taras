@@ -58,7 +58,7 @@ const FAQ = () => {
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                                We are based in Long Island, NY, and proudly serve the surrounding areas. If you're interested, we can schedule a consultation to discuss your project in detail. Let us know how we can assist you further!
+                                We are based in Long Island, NY, and proudly serve the surrounding areas. If you are interested, we can schedule a consultation to discuss your project in detail. Let us know how we can assist you further!
                                 </Disclosure.Panel>
                             </>
                         )}
