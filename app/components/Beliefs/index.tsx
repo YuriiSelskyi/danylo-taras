@@ -11,18 +11,18 @@ const Beliefs = () => {
                     <h3 className="text-4xl sm:text-65xl font-bold text-white leading-snug mb-5 text-center sm:text-start">Honesty <span className="text-grey">and hard work are our beliefs.</span></h3>
                     <h5 className="text-offwhite pt-2 mb-5 text-center sm:text-start">Quis ipsum suspendisse ultrices gravida risus commodo viverra maecenas accumsan lacus vel facilisis.</h5>
                     <div className="text-center sm:text-start">
-                        <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-[#026163] border border-[#026163] hover:bg-[#026163]">Get Started</button>
+                        <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-[#b79f95] border border-[#b79f95] hover:bg-[#b79f95]">Get Started</button>
                     </div>
                 </div>
 
                 {/* COLUMN-2 */}
 
                 <div className="bg-build pt-12 px-10 sm:px-24 pb-52 md:pb-70 rounded-3xl">
-                    <h2 className="text-lg font-normal text-[#026163] tracking-widest mb-5 text-center sm:text-start">BUILD</h2>
-                    <h3 className="text-4xl sm:text-65xl font-bold text-black leading-snug mb-5 text-center sm:text-start"><span className="text-[#026163]">Build</span> that great idea that you have.</h3>
+                    <h2 className="text-lg font-normal text-[#b79f95] tracking-widest mb-5 text-center sm:text-start">BUILD</h2>
+                    <h3 className="text-4xl sm:text-65xl font-bold text-black leading-snug mb-5 text-center sm:text-start"><span className="text-[#b79f95]">Build</span> that great idea that you have.</h3>
                     <h5 className="bluish pt-2 mb-5 text-center sm:text-start">Quis ipsum suspendisse ultrices gravida risus commodo viverra maecenas accumsan lacus vel facilisis.</h5>
                     <div className="text-center sm:text-start">
-                        <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-[#026163] border border-[#026163] hover:bg-[#026163]">Learn more</button>
+                        <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-[#b79f95] border border-[#b79f95] hover:bg-[#b79f95]">Learn more</button>
                     </div>
                 </div>
 

@@ -214,7 +214,7 @@ html {
 
 .test-pos {
   left: 42px;
-  top: 44px;
+  top: -10px;
 }
 
 .test-sha {

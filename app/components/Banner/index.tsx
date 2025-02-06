@@ -12,7 +12,7 @@ const Banner = () => {
 
         <div className="mx-auto sm:mx-0 z-0">
           <div className="py-3 text-center lg:text-start">
-            <button className="text-[#026163] bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black">
+            <button className="text-[#b79f95] bg-lightblue text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider cursor-default">
               Construction Corporation
             </button>
           </div>
@@ -24,7 +24,7 @@ const Banner = () => {
           <div className="my-7 text-center lg:text-start">
             <button
               onClick={() => setOpenContactUsForm(true)}
-              className="text-sm md:text-xl font-semibold hover:shadow-xl bg-[#026163] text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-[#026163]"
+              className="text-sm md:text-xl font-semibold hover:shadow-xl bg-[#b79f95] text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-[#b79f95]"
             >
               Get Started
             </button>

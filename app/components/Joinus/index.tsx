@@ -1,13 +1,13 @@
 
 const Join = () => {
     return (
-        <div className="bg-joinus my-32">
+        <div className="bg-joinus">
             <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8'>
 
                 <div className="text-center">
-                    <h3 className="text-[#026163] text-lg font-normal tracking-widest">JOIN US</h3>
-                    <h2 className="text-4xl sm:text-6xl font-bold my-6 leading-10"> Take your business to <br /> the new level.</h2>
-                    <p className="text-lightblack text-base font-normal">Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead <br /> historiarum. Golums, zombies unrelenting et Raimi fascinati beheading.</p>
+                    <h3 className="text-[#b79f95] text-lg font-normal tracking-widest">JOIN US</h3>
+                    <h2 className="text-4xl sm:text-6xl font-bold my-6 leading-10"> Take your property to <br /> the new level.</h2>
+                    {/* <p className="text-lightblack text-base font-normal">Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead <br /> historiarum. Golums, zombies unrelenting et Raimi fascinati beheading.</p> */}
                 </div>
 
                 <div className="mx-auto max-w-4xl pt-5">
@@ -19,7 +19,7 @@ const Join = () => {
                             <input type="email" className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l border-linegrey bg-lightgrey focus:outline-none bg-emailbg focus:text-black" placeholder="Your email" autoComplete="off" />
                         </div>
                         <div className="sm:mr-3">
-                            <button type="submit" className="joinButton w-full sm:w-0 text-xl text-white font-semibold text-center rounded-xl sm:rounded-full bg-[#026163] hover:bg-btnblue">
+                            <button type="submit" className="joinButton w-full sm:w-0 text-xl text-white font-semibold text-center rounded-xl sm:rounded-full bg-[#b79f95] hover:bg-btnblue">
                                 Join!
                             </button>
                         </div>

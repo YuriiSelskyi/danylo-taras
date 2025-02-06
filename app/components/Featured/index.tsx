@@ -126,7 +126,7 @@ export default class MultipleItems extends Component {
     };
 
     return (
-      <div className="bg-[#026163] py-20 marginFeature bg-featured">
+      <div className="bg-[#b79f95] marginFeature bg-featured">
         <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 ">
           <div className="text-center pt-48 pb-10 md:pt-96">
             <h3 className="text-4xl sm:text-6xl font-bold text-white my-2">

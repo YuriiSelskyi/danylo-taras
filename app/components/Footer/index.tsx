@@ -2,61 +2,61 @@ import Image from "next/image";
 import Link from "next/link";
 
 // MIDDLE LINKS DATA
-interface ProductType {
-    id: number;
-    section: string;
-    link: string[];
-}
+// interface ProductType {
+//     id: number;
+//     section: string;
+//     link: string[];
+// }
 
-const products: ProductType[] = [
-    {
-        id: 1,
-        section: "Menu",
-        link: ['Home', 'Popular', 'About', 'Contact'],
-    },
-    {
-        id: 2,
-        section: "Category",
-        link: ['Design', 'Mockup', 'View all', 'Log In']
-    },
-    {
-        id: 3,
-        section: "Pages",
-        link: ['404', 'Instructions', 'License']
-    },
-    {
-        id: 4,
-        section: "Others",
-        link: ['Styleguide', 'Changelog']
-    }
-]
+// const products: ProductType[] = [
+//     {
+//         id: 1,
+//         section: "Menu",
+//         link: ['Home', 'Popular', 'About', 'Contact'],
+//     },
+//     {
+//         id: 2,
+//         section: "Category",
+//         link: ['Design', 'Mockup', 'View all', 'Log In']
+//     },
+//     {
+//         id: 3,
+//         section: "Pages",
+//         link: ['404', 'Instructions', 'License']
+//     },
+//     {
+//         id: 4,
+//         section: "Others",
+//         link: ['Styleguide', 'Changelog']
+//     }
+// ]
 
 const footer = () => {
     return (
         <div className="bg-black -mt-40" id="first-section">
             <div className="mx-auto max-w-2xl pt-48 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
+                {/* <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8"> */}
 
                     {/* COLUMN-1 */}
 
-                    <div className='col-span-4'>
+                    <div className='flex-col flex justify-center items-center'>
                         <h3 className='text-white text-4xl font-semibold leading-9 mb-4 lg:mb-20'> DST Constraction</h3>
                         <div className='flex gap-4'>
                             <div className='footer-icons'>
-                                <Link href="https://facebook.com"><Image src={'/images/footer/vec.svg'} alt="facebook" width={15} height={20} /></Link>
+                                <Link href="https://www.facebook.com/share/1DZFC3AV4k/" target="_blank"><Image src={'/images/footer/vec.svg'} alt="facebook" width={15} height={20} /></Link>
                             </div>
-                            <div className='footer-icons'>
+                            {/* <div className='footer-icons'>
                                 <Link href="https://twitter.com"><Image src={'/images/footer/twitter.svg'} alt="twitter" width={20} height={20} /></Link>
-                            </div>
+                            </div> */}
                             <div className='footer-icons'>
-                                <Link href="https://instagram.com"><Image src={'/images/footer/instagram.svg'} alt="instagram" width={20} height={20} /></Link>
+                                <Link href="https://www.instagram.com/dst_construction_company" target="_blank"><Image src={'/images/footer/instagram.svg'} alt="instagram" width={20} height={20} /></Link>
                             </div>
                         </div>
                     </div>
 
                     {/* CLOUMN-2/3 */}
 
-                    {products.map((product) => (
+                    {/* {products.map((product) => (
                         <div key={product.id} className="group relative col-span-2">
                             <p className="text-white text-xl font-extrabold mb-9">{product.section}</p>
                             <ul>
@@ -67,9 +67,9 @@ const footer = () => {
                                 ))}
                             </ul>
                         </div>
-                    ))}
+                    ))} */}
 
-                </div>
+                {/* </div> */}
             </div>
 
         </div>

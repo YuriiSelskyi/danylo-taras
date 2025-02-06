@@ -22,7 +22,7 @@ module.exports = {
       'white': '#ffffff',
       'black': '#000000',
       'blue': '#0066FF',
-      'lightblue': '#a1c9c9',
+      'lightblue': '#F3EAD9',
       'darkpurple': '#241A24',
       'lightgrey': '#F4F5F6',
       'navyblue': '#013e40',
@@ -37,7 +37,7 @@ module.exports = {
       'faqblue' : '#0861FF',
       'gold' : '#FAAF38',
       'hoblue': '#0000FF',
-      'btnblue' : "#a1c9c9",
+      'btnblue' : "wheat",
       'bggrey' : '#DDDDDD',
       'footer' : 'rgba(226, 223, 223, 0.75)',
       'linegrey' : "#C4C4C4"

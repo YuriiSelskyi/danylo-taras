@@ -194,7 +194,7 @@ export default class MultipleItems extends Component {
       <div className="bg-lightgrey py-20" id="blog-section">
         <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 ">
           <div className="text-center">
-            <h3 className="text-[#026163] text-lg font-normal tracking-widest">
+            <h3 className="text-[#b79f95] text-lg font-normal tracking-widest">
               ARTICLES
             </h3>
             <h3 className="text-4xl sm:text-6xl font-bold">Our jobs</h3>

@@ -47,10 +47,10 @@ const Manage = () => {
     <div id="services-section">
       <div className="mx-auto max-w-7xl sm:py-20 lg:px-8 my-16">
         <h3 className="text-center text-4xl sm:text-65xl font-black">
-          Manage All Your Social Media <br /> Profiles From One Place.
+          Every project is unique, and so is its pricing. Let’s discuss your needs, and we’ll provide a personalized estimate and price list.
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16 mx-5 gap-14 manage">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16 mx-5 gap-14 manage">
           {names.map((items, i) => (
             <div className="manageTabs text-center p-10" key={i}>
               <h4 className="text-2xl font-bold mb-3">{items.heading}</h4>
@@ -74,19 +74,19 @@ const Manage = () => {
                   </h3>
                 ))}
               </div>
-              {/* <div className="mb-3 mt-6 text-left">
+              <div className="mb-3 mt-6 text-left">
                 {items.items.map((el) => (
                   <h3 className="text-sm font-medium text-darkgrey" key={el}>
                     {el}
                   </h3>
                 ))}
-              </div> */}
-              <button className="text-sm font-bold text-[#026163] bg-transparent hover:bg-[#026163] hover:text-white border-2 border-[#026163] rounded-full py-4 px-12 mb-6">
+              </div>
+              <button className="text-sm font-bold text-[#b79f95] bg-transparent hover:bg-[#b79f95] hover:text-white border-2 border-[#b79f95] rounded-full py-4 px-12 mb-6">
                 Contact Us
               </button>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

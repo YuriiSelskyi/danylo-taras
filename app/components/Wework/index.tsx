@@ -14,33 +14,58 @@ interface DataType {
 const postData: DataType[] = [
     {
         profession: 'Co-founder',
-        name: 'John Doe',
+        name: 'Bathroom',
         imgSrc: '/images/wework/avatar.svg',
     },
     {
         profession: 'Co-founder',
-        name: 'John Doe',
+        name: 'Bedroom',
+        imgSrc: '/images/wework/avatar2.svg',
+    },
+    {
+        profession: 'Co-founder',
+        name: 'Living room',
         imgSrc: '/images/wework/avatar3.svg',
     },
     {
         profession: 'Co-founder',
-        name: 'John Doe',
+        name: 'Kitchen',
         imgSrc: '/images/wework/avatar4.svg',
     },
     {
         profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar.svg',
+        name: 'Fire place',
+        imgSrc: '/images/wework/avatar5.svg',
     },
     {
         profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar3.svg',
+        name: 'Balcony',
+        imgSrc: '/images/wework/avatar6.svg',
     },
     {
         profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar4.svg',
+        name: 'Windows',
+        imgSrc: '/images/wework/avatar7.svg',
+    },
+    {
+        profession: 'Co-founder',
+        name: 'Basement',
+        imgSrc: '/images/wework/avatar8.svg',
+    },
+    {
+        profession: 'Co-founder',
+        name: 'Stairs',
+        imgSrc: '/images/wework/avatar9.svg',
+    },
+    {
+        profession: 'Co-founder',
+        name: 'Closet',
+        imgSrc: '/images/wework/avatar10.svg',
+    },
+    {
+        profession: 'Co-founder',
+        name: 'Roof',
+        imgSrc: '/images/wework/avatar11.svg',
     },
 ]
 
@@ -114,7 +139,7 @@ export default class MultipleItems extends Component {
                                     {/* <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={120} height={120} className=" absolute inline-block position-linkedin" /> */}
                                 </div>
                                 <h4 className='text-4xl font-bold pt-14'>{items.name}</h4>
-                                <h3 className='text-2xl font-normal pt-4 pb-2 opacity-50'>{items.profession}</h3>
+                                {/* <h3 className='text-2xl font-normal pt-4 pb-2 opacity-50'>{items.profession}</h3> */}
                             </div>
                         </div>
                     ))}
