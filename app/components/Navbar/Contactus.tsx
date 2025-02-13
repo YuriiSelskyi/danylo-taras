@@ -1,6 +1,7 @@
 "use client";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
 const Contactusform = ({
@@ -25,18 +26,28 @@ const Contactusform = ({
     setInputValues((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleClick = () => {
-    alert(
-      `Name: ${inputValues.input1}, Email-address: ${inputValues.input2}, Message: ${inputValues.input3}`
-    );
+  // FORM SUBMIT
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+    await emailjs
+      .sendForm(
+        "service_odrd7bc",
+        "template_8o27gyu",
+        event.target,
+        {
+          publicKey: "FuhEasgYQOruVcAgE",
+        }
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
     setIsOpen(false);
     handleClose && handleClose();
-  };
-
-  // FORM SUBMIT
-  const handleSubmit = (event: { preventDefault: () => void }) => {
-    event.preventDefault();
-    // handle form submission
   };
 
   const isDisabled = Object.values(inputValues).some((value) => value === "");
@@ -165,7 +176,6 @@ const Contactusform = ({
                       </div>
                       <button
                         type="submit"
-                        onClick={handleClick}
                         disabled={isDisabled}
                         className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-[#b79f95] focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       >
