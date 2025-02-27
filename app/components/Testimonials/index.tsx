@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { StarIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
-// CAROUSEL DATA
 
 interface DataType {
   profession: string;
@@ -16,32 +15,31 @@ const postData: DataType[] = [
   {
     name: "Michael & Sarah T.",
     profession: "Professional Team!",
-    comment: "We had an amazing experience with this company! They designed and built our dream home in Long Island with incredible attention to detail. The team was professional, communicative, and always on schedule. Our house turned out even better than we imagined! Highly recommend their services!",
+    comment:
+      "We had an amazing experience with this company! They designed and built our dream home in Long Island with incredible attention to detail. The team was professional, communicative, and always on schedule. Our house turned out even better than we imagined! Highly recommend their services!",
     imgSrc: "/images/testimonial/user1.svg",
   },
   {
     name: "Emily R.",
     profession: "Stunning Apartment Renovation!",
-    comment: "We hired them for a full renovation of our apartment, and the results were outstanding! The quality of work, the materials used, and the efficiency of the team exceeded our expectations. They turned our vision into reality, and we couldn't be happier with our new space!",
+    comment:
+      "We hired them for a full renovation of our apartment, and the results were outstanding! The quality of work, the materials used, and the efficiency of the team exceeded our expectations. They turned our vision into reality, and we couldn't be happier with our new space!",
     imgSrc: "/images/testimonial/user2.svg",
   },
   {
     name: "David & Lisa M.",
     profession: "Reliable & Trustworthy!",
-    comment: "From start to finish, the team was incredibly professional. They built our custom home with top-notch craftsmanship and kept us informed throughout the entire process. Everything was completed on time and within budget. We are beyond thrilled with our new home!",
+    comment:
+      "From start to finish, the team was incredibly professional. They built our custom home with top-notch craftsmanship and kept us informed throughout the entire process. Everything was completed on time and within budget. We are beyond thrilled with our new home!",
     imgSrc: "/images/testimonial/user3.svg",
   },
 ];
 
-// CAROUSEL SETTINGS
 
 export default class MultipleItems extends Component {
   render() {
     return (
-      <div
-        className="bg-testimonial pt-20 lg:py-20"
-        id="testimonial-section"
-      >
+      <div className="bg-testimonial pt-20 lg:py-20" id="testimonial-section">
         <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 ">
           <div className="text-center">
             <h3 className="text-4xl sm:text-6xl font-bold text-black my-3">
@@ -56,7 +54,7 @@ export default class MultipleItems extends Component {
           </div>
           <div className="flex flex-wrap justify-around">
             {postData.map((items, i) => (
-              <div key={i} className={`relative ${i && 'hidden sm:block'}`}>
+              <div key={i} className={`relative ${i && "hidden sm:block"}`}>
                 <div className="bg-white test-sha m-3 p-10 my-6 rounded-3xl max-w-[360px]">
                   <Image
                     src={items.imgSrc}
