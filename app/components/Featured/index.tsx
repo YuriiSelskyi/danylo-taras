@@ -4,41 +4,32 @@ import React, { Component } from "react";
 import Image from "next/image";
 
 interface DataType {
-  heading: string;
   imgSrc: string;
 }
 
 const postData: DataType[] = [
   {
-    heading: "Brand design for a computer brand.",
     imgSrc: "/images/featured/feat1.jpeg",
   },
   {
-    heading: "Mobile app 3d wallpaper.",
     imgSrc: "/images/featured/feat2.jpeg",
   },
   {
-    heading: "Brand design for a computer brand.",
     imgSrc: "/images/featured/feat3.JPG",
   },
   {
-    heading: "Mobile app 3d wallpaper.",
     imgSrc: "/images/featured/feat4.JPG",
   },
   {
-    heading: "Mobile app 3d wallpaper.",
     imgSrc: "/images/featured/feat5.JPG",
   },
   {
-    heading: "Mobile app 3d wallpaper.",
     imgSrc: "/images/featured/feat6.JPG",
   },
   {
-    heading: "Mobile app 3d wallpaper.",
     imgSrc: "/images/featured/feat7.jpeg",
   },
   {
-    heading: "Mobile app 3d wallpaper.",
     imgSrc: "/images/featured/feat8.JPG",
   },
 ];
@@ -89,7 +80,7 @@ export default class MultipleItems extends Component {
       slidesToShow: 2,
       slidesToScroll: 1,
       arrows: true,
-      autoplay: false,
+      autoplay: true,
       speed: 500,
       nextArrow: (
         <SampleNextArrow
@@ -146,11 +137,6 @@ export default class MultipleItems extends Component {
                     height={620}
                     className="rounded-2xl"
                   />
-                  <div className="w-auto sm:w-345">
-                    <h4 className="sm:text-5xl font-bold sm:pt-6 text-center sm:text-start mt-10 text-white">
-                      {items.heading}
-                    </h4>
-                  </div>
                 </div>
               </div>
             ))}
