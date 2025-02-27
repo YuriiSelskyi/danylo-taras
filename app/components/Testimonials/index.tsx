@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { StarIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
-
 interface DataType {
   profession: string;
   comment: string;
@@ -34,7 +33,6 @@ const postData: DataType[] = [
     imgSrc: "/images/testimonial/user3.svg",
   },
 ];
-
 
 export default class MultipleItems extends Component {
   render() {

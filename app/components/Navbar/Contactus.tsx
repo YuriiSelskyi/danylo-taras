@@ -26,18 +26,12 @@ const Contactusform = ({
     setInputValues((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  // FORM SUBMIT
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     await emailjs
-      .sendForm(
-        "service_odrd7bc",
-        "template_8o27gyu",
-        event.target,
-        {
-          publicKey: "FuhEasgYQOruVcAgE",
-        }
-      )
+      .sendForm("service_odrd7bc", "template_8o27gyu", event.target, {
+        publicKey: "FuhEasgYQOruVcAgE",
+      })
       .then(
         (result) => {
           console.log(result);

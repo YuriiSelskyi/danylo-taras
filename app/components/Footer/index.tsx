@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,7 +23,11 @@ const footer = () => {
             +16313366309 - Taras
           </a>
           <h2
-            className="text-white text-2xl font-semibold leading-9 mb-4 lg:mb-20"
+            className="text-white text-2xl font-semibold leading-9 mb-4 lg:mb-20 cursor-pointer"
+            onClick={(e) => {
+              window.location.href = "mailto:dst.construction.llc@gmail.com";
+              e.preventDefault();
+            }}
           >
             dst.construction.llc@gmail.com
           </h2>

@@ -5,11 +5,10 @@ import { useState } from "react";
 
 const Banner = () => {
   const [openContactUsForm, setOpenContactUsForm] = useState(false);
+
   return (
     <div className="mx-auto max-w-7xl my-10 sm:py-10 px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 my-16">
-        {/* COLUMN-1 */}
-
         <div className="mx-auto sm:mx-0 z-0">
           <div className="py-3 text-center lg:text-start">
             <button className="text-[#b79f95] bg-lightblue text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider cursor-default">
@@ -35,9 +34,6 @@ const Banner = () => {
           defaultOpen={openContactUsForm}
           handleClose={() => setOpenContactUsForm(false)}
         />
-
-        {/* COLUMN-2 */}
-
         <div className="lg:-m-24 lg:pt-20 hidden lg:block">
           <Image
             src="/images/banner/banner.jpg"

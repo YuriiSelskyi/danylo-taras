@@ -23,8 +23,6 @@ const Dedicated = () => {
               className="mx-auto md:mx-0 rounded-3xl"
             />
           </div>
-
-          {/* COLUMN-2 */}
           <div className="relative">
             <Image
               src="images/dedicated/comma.svg"
@@ -49,7 +47,6 @@ const Dedicated = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 mb-0 mt-20">
-          {/* COLUMN-2 */}
           <div className="relative">
             <Image
               src="images/dedicated/comma.svg"
@@ -71,7 +68,6 @@ const Dedicated = () => {
               Danylo S., CTO
             </p>
           </div>
-          {/* COLUMN-1 */}
           <div className="flex flex-row-reverse">
             <Image
               src="/images/dedicated/man1.jpeg"

@@ -3,8 +3,6 @@ import Slider from "react-slick";
 import React, { Component } from "react";
 import Image from "next/image";
 
-// CAROUSEL DATA
-
 interface DataType {
   heading: string;
   imgSrc: string;
@@ -44,8 +42,6 @@ const postData: DataType[] = [
     imgSrc: "/images/featured/feat8.JPG",
   },
 ];
-
-// CAROUSEL SETTINGS
 
 function SampleNextArrow(props: { className: any; style: any; onClick: any }) {
   const { className, style, onClick } = props;
@@ -91,7 +87,6 @@ export default class MultipleItems extends Component {
       dots: false,
       infinite: true,
       slidesToShow: 2,
-      // centerMode: true,
       slidesToScroll: 1,
       arrows: true,
       autoplay: false,

@@ -2,7 +2,6 @@
 import emailjs from "@emailjs/browser";
 
 const Join = () => {
-  // FORM SUBMIT
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     await emailjs
